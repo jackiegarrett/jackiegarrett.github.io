@@ -105,8 +105,8 @@ a:hover {
 .social {
     margin-top: 6%;
     display: flex;
-    justify-content: center stretch;
-    width: 100%;
+    justify-content: center;
+    width: 100vh;
 }
 
 .social, svg {
