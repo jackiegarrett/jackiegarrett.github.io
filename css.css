@@ -1,6 +1,7 @@
 body {
     transition: 4s opacity;
     margin: 0;
+    width: 100%;
     font-family: 'Work Sans', sans-serif;
     background-color: #dcdcdc;
 }
@@ -104,7 +105,7 @@ a:hover {
 .social {
     margin-top: 6%;
     display: flex;
-    justify-content: center;
+    justify-content: center stretch;
     width: 100%;
 }
 
