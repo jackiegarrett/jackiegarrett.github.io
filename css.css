@@ -42,6 +42,7 @@ body.fade {
 
 .photo, img {
     display: flex;
+    align-self: center;
     justify-content: center;
     width: 80%;
     border-radius: 100%;
