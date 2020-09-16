@@ -1,7 +1,5 @@
 body {
-    transition: 4s opacity;
     margin: 0;
-    width: 100%;
     font-family: 'Work Sans', sans-serif;
     background-color: #dcdcdc;
 }
@@ -15,18 +13,14 @@ body {
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 
-body.fade {
-    opacity: 0;
-    transition: none;
-}
-
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin-top: 25vh;
+    width: auto;
+    margin-top: 15vh;
     background-color: #dcdcdc;
+    transition:  opacity ease-in 2s;
 }
 
 @media screen and (min-width: 600px) {
@@ -36,26 +30,25 @@ body.fade {
 }
 
 .photo {
-    width: 80%;
+    width: 140%;
     overflow: hidden;
 }
 
 
-.photo, img {
+#myPic {
     display: flex;
     align-self: center;
-    justify-content: center;
-    width: 80%;
     border-radius: 100%;
     filter: grayscale(100%); 
+    transition: filter ease .5s;
 }
 
-.photo,img:hover {
+#myPic:hover {
     filter: grayscale(0%);
 }
 
 @media screen and (min-width: 600px) {
-    .photo, img {
+    #myPic {
         width: 100%;
     }
 }
@@ -95,18 +88,11 @@ a:hover {
     color: #004d4d;
 }
 
-/*
-.buttonLinks > a {
-    text-decoration: inherit;
-    border-bottom:3px solid #1985a1;
-}
-*/
-
 .social {
     margin-top: 6%;
+    width: 90%;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
 }
 
 .social, svg {
@@ -115,6 +101,7 @@ a:hover {
 
 .svg:hover{
     opacity: .6;
+    transition: opacity .2s ease-in;
 }
 
 
